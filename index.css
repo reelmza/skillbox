@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*:active,
+*:focus {
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --theme: #6c63ff;
+  --themeShade: #4841c5;
+  --themeMix: #dc0c57;
+
+  --themeDark: #000;
+  --themeLight: #fff;
+
+  --themeGray: rgb(185, 185, 185);
+}
+
+button h6 {
+  padding-top: 5px;
+}
+
+.slider {
+  width: 80%;
+  margin-top: 10px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  height: 2px;
+  background: var(--themeMix);
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 15px;
+  width: 15px;
+
+  border-radius: 50%;
+
+  background: var(--themeMix);
+  cursor: grab;
+}
+
+.slider::-moz-range-thumb {
+  appearance: none;
+  height: 15px;
+  width: 15px;
+
+  border-radius: 50%;
+
+  background: var(--themeMix);
+  cursor: grab;
+}
+
+/* Header slides */
+.header-slides {
+  position: absolute;
+  top: 0;
+
+  height: 30vh;
+  width: 100%;
+
+  padding: 0px 30px;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+/* Main */
+.big-container {
+  max-width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.skillbox {
+  min-height: 100%;
+  background: var(--theme);
+}
+
+.img-box {
+  width: 100%;
+  height: 30%;
+
+  background: var(--themeLight);
+
+  overflow: hidden;
+  padding: 10px 0px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.skills {
+  background: #eee;
+  min-height: 70%;
+
+  padding: 30px;
+}
+
+.skills button {
+  width: 100%;
+  padding: 20px 0px;
+
+  border-radius: 0px;
+  margin-bottom: 30px;
+
+  background: #fafafa;
+  color: var(--themeDark);
+
+  border-radius: 5px;
+  border: solid 1px var(--themeGray);
+}
+
+.html {
+  color: #ee6a1e;
+}
+
+.css {
+  color: #1762d3;
+}
+
+.js {
+  color: #e9c601;
+}
+
+.bootstrap {
+  color: #4d087a;
+}
+
+.react {
+  color: #4ec5e9;
+}
+
+.node {
+  color: #363a3d;
+}
+
+.mongodb {
+  color: green;
+}
+
+.skills button h5 {
+  margin: 0px;
+}
+
+.skills button img {
+  height: 40px;
+}
+
+@media only screen and (min-width: 568px) {
+  .img-box {
+    height: 30%;
+  }
+
+  .skills {
+    min-height: 70%;
+  }
+
+  .slider {
+    width: 70%;
+  }
+
+  .skills button {
+    padding: 40px 0px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .img-box {
+    height: 35%;
+  }
+
+  .skills {
+    min-height: 65%;
+  }
+
+  .slider {
+    width: 45%;
+  }
+
+  .header-slides {
+    height: 35vh;
+  }
+}
