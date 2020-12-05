@@ -69,17 +69,6 @@ button h6 {
   cursor: grab;
 }
 
-/* Header slides */
-.header-slides {
-  position: absolute;
-  top: 0;
-
-  height: 30vh;
-  width: 100%;
-
-  padding: 0px 30px;
-}
-
 button:focus {
   box-shadow: none !important;
 }
@@ -102,19 +91,38 @@ button:focus {
   width: 100%;
   height: 30%;
 
-  background: rgb(246, 255, 168);
+  background: #fff;
 
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 0px;
 }
 
-.img-box img {
+.img-child {
   width: 100%;
   height: 100%;
+  margin: 0px 10px;
+  border-radius: 5px;
+
+  background: #7670f3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.img-child h2 {
+  color: #fff;
+}
+.img-child img {
+  max-height: 100px;
+  width: auto;
 }
 
 .skills {
-  background: #f0f0f0;
+  background: #eee;
   min-height: 70%;
 
   padding: 10px 23px;
@@ -130,7 +138,7 @@ button:focus {
   background: #fff;
   color: var(--themeDark);
 
-  border: solid 1px #d8d8d8;
+  border: none;
 }
 
 .skills button:hover {
@@ -140,7 +148,6 @@ button:focus {
 
 .skills button h5 {
   margin: 0px;
-  color: #aca8ff;
   color: #6c63ff;
 }
 
@@ -148,9 +155,10 @@ button:focus {
   height: 48px;
 }
 
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 576px) {
   .img-box {
     height: 30%;
+    padding: 10px 0px;
   }
 
   .skills {
@@ -166,9 +174,13 @@ button:focus {
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   .img-box {
     height: 35%;
+  }
+
+  .img-child {
+    width: 80%;
   }
 
   .skills {
