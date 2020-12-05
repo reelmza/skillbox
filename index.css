@@ -13,6 +13,10 @@
   outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -98,7 +102,7 @@ button:focus {
   width: 100%;
   height: 30%;
 
-  background: var(--themeLight);
+  background: rgb(246, 255, 168);
 
   overflow: hidden;
   padding: 10px 0px;
@@ -110,60 +114,38 @@ button:focus {
 }
 
 .skills {
-  background: #eee;
+  background: #f0f0f0;
   min-height: 70%;
 
-  padding: 30px;
+  padding: 10px 23px;
 }
 
 .skills button {
   width: 100%;
   padding: 20px 0px;
 
-  border-radius: 0px;
-  margin-bottom: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 
-  background: #fafafa;
+  background: #fff;
   color: var(--themeDark);
 
-  border-radius: 5px;
+  border: solid 1px #d8d8d8;
+}
+
+.skills button:hover {
+  background: var(--themeLight);
   border: solid 1px var(--themeGray);
-}
-
-.html {
-  color: #ee6a1e;
-}
-
-.css {
-  color: #1762d3;
-}
-
-.js {
-  color: #e9c601;
-}
-
-.bootstrap {
-  color: #4d087a;
-}
-
-.react {
-  color: #4ec5e9;
-}
-
-.node {
-  color: #363a3d;
-}
-
-.mongodb {
-  color: green;
 }
 
 .skills button h5 {
   margin: 0px;
+  color: #aca8ff;
+  color: #6c63ff;
 }
 
 .skills button img {
-  height: 40px;
+  height: 48px;
 }
 
 @media only screen and (min-width: 568px) {
