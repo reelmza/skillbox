@@ -88,7 +88,7 @@ button:focus {
 
 .skillbox {
   min-height: 100%;
-  background: var(--theme);
+  background: #fff;
 }
 
 .img-box {
@@ -126,7 +126,7 @@ button:focus {
 }
 
 .skills {
-  background: #eee;
+  /* background: #eee; */
   min-height: 78%;
 
   padding: 10px 23px;
@@ -142,7 +142,7 @@ button:focus {
   background: #fff;
   color: var(--themeDark);
 
-  border: none;
+  border: solid 1px rgb(207, 207, 207);
 }
 
 .skills button:hover {
