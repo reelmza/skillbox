@@ -133,10 +133,14 @@ button:focus {
   height: 48px;
 }
 
-.navigation-logo h5,
+.navigation-logo h6,
 .navigation-links h5 {
   padding: 0;
   margin: 0;
+}
+
+.navigation-logo h6 {
+  font-size: 15px;
 }
 
 .navigation-links ul li i {
