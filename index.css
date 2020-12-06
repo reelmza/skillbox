@@ -130,7 +130,7 @@ button:focus {
 }
 
 .navigation-logo img {
-  height: 16px;
+  height: 48px;
 }
 
 .navigation-logo h5,
@@ -140,7 +140,7 @@ button:focus {
 }
 
 .navigation-links ul li i {
-  font-size: 32px;
+  font-size: 16px;
 }
 
 .main {
@@ -193,7 +193,7 @@ button:focus {
 
 .section-header {
   position: absolute;
-  background: #18a077;
+  background: #da074d;
   color: #fff;
 
   display: flex;
