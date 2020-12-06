@@ -140,11 +140,11 @@ button:focus {
 }
 
 .navigation-links ul li i {
-  font-size: 18px;
+  font-size: 23px;
 }
 
 .first-mobile-icon {
-  margin-top: 4.5px;
+  margin-top: 2.5px;
 }
 .main {
   min-height: 100%;
