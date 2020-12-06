@@ -64,8 +64,6 @@ button h6 {
 
 .slider::-moz-range-thumb {
   appearance: none;
-  color: #017c76;
-  color: #0a8680;
   color: #015551;
   height: 15px;
   width: 15px;
@@ -89,6 +87,47 @@ button:focus {
   flex-direction: column;
 }
 
+.navigation {
+  min-height: 55px;
+  padding: 0px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff;
+}
+
+.navigation-links {
+  height: 100%;
+}
+
+.navigation-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navigation-links ul {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+.navigation-logo {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.navigation-logo h4 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
 .main {
   min-height: 100%;
   background: #fff;
@@ -96,7 +135,7 @@ button:focus {
 
 .header {
   width: 100%;
-  height: 23%;
+  height: 30%;
 
   background: #017c76;
 
@@ -125,12 +164,10 @@ button:focus {
 }
 
 .header-child img {
-  max-height: 60px;
+  max-height: 80px;
 }
 
 .skills {
-  /* background: #eee; */
-  min-height: 78%;
   padding: 10px 23px;
 }
 
@@ -147,8 +184,6 @@ button:focus {
 
   background: #fff;
   color: var(--themeDark);
-
-  border: solid 1px #eee;
 }
 
 /* .skills button:hover {
@@ -164,17 +199,17 @@ button:focus {
 }
 
 @media only screen and (min-width: 576px) {
+  .navigation {
+    min-height: 65px;
+    padding: 0px 20px;
+  }
   .header {
-    height: 30%;
+    height: 40%;
     padding: 10px 0px;
   }
 
   .header-child img {
-    max-height: 90px;
-  }
-
-  .skills {
-    min-height: 70%;
+    max-height: 150px;
   }
 
   .slider {
@@ -187,27 +222,27 @@ button:focus {
 }
 
 @media only screen and (min-width: 768px) {
+  .navigation {
+    min-height: 70px;
+    padding: 0px 30px;
+  }
   .header {
-    height: 35%;
+    height: 45%;
   }
 
   .header-child {
-    width: 80%;
+    width: 100%;
   }
 
   .header-child img {
-    max-height: 150px;
-  }
-
-  .skills {
-    min-height: 65%;
+    max-height: 200px;
   }
 
   .slider {
     width: 45%;
   }
 
-  .header-slides {
-    height: 35vh;
+  .skills button {
+    border: solid 1px #eee;
   }
 }
