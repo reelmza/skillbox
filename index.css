@@ -104,7 +104,7 @@ button:focus {
 
 .navigation-links ul li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 5px;
   cursor: pointer;
 }
 
@@ -128,7 +128,7 @@ button:focus {
 
 .navigation-logo img {
   height: 60%;
-  border-right: solid 1px #0a857e;
+  border-right: solid 2px #007c76;
   margin-right: 5px;
 }
 
@@ -139,8 +139,8 @@ button:focus {
   margin-bottom: 3px;
 }
 
-.navigation-links ul li i {
-  font-size: 22px;
+.navigation-links ul li img {
+  height: 24px;
 }
 
 .main {
