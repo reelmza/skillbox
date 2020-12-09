@@ -33,9 +33,24 @@ body {
   --themeGray: rgb(185, 185, 185);
 }
 
+h1,
 h2,
+h3,
+h4,
+h5,
 h6 {
   margin: 0px;
+}
+
+em {
+  font-size: 12.5px;
+  font-style: unset;
+
+  padding: 3px 5px;
+}
+
+.w100 {
+  width: 100%;
 }
 button h6 {
   padding-top: 5px;
@@ -98,6 +113,9 @@ button:focus {
   background: #fff;
   position: sticky;
   top: 0;
+
+  z-index: 2;
+  box-shadow: #000 1px 0px 3px;
 }
 
 .navigation-links {
@@ -190,14 +208,15 @@ button:focus {
   color: #fff;
 }
 
-.skills {
+.skills,
+.projects {
   padding: 10px 23px;
   position: relative;
 }
 
 .section-header {
   position: absolute;
-  background: #da074d;
+  background: #e41262;
   color: #fff;
 
   display: flex;
@@ -232,6 +251,29 @@ button:focus {
 
 .skills button img {
   height: 48px;
+}
+
+/* Projeccts */
+.project-item {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+
+  background: rgb(212, 212, 212);
+  overflow: hidden;
+}
+
+.project-text {
+  border: solid 1px #dddddd;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.project-text h5 {
+  padding-bottom: 5px;
+  border-bottom: solid 1px #dddddd;
 }
 
 @media only screen and (min-width: 576px) {
@@ -286,7 +328,11 @@ button:focus {
   }
 
   .skills button {
-    border: solid 1px rgb(209, 209, 209);
+    border: solid 1px #dddddd;
+  }
+
+  .project-image {
+    height: 150px;
   }
 }
 
