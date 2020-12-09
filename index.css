@@ -20,6 +20,7 @@ html {
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  padding-top: 55px; /*  To compensate for fixed nav bar */
 }
 
 :root {
@@ -104,6 +105,7 @@ button:focus {
 
 .navigation {
   min-height: 55px;
+  width: 100%;
   padding: 0px 10px;
 
   display: flex;
@@ -111,10 +113,10 @@ button:focus {
   justify-content: space-between;
 
   background: #fff;
-  position: sticky;
+  position: fixed;
   top: 0;
 
-  z-index: 2;
+  z-index: 1;
   box-shadow: #000 1px 0px 3px;
 }
 
@@ -122,21 +124,19 @@ button:focus {
   height: 100%;
 }
 
+.navigation-links ul {
+  display: flex;
+  margin-bottom: 0%;
+}
+
 .navigation-links ul li {
-  display: inline-block;
   margin-right: 10px;
   cursor: pointer;
+  list-style-type: none;
 }
 
 .navigation-links ul li:nth-child(2n + 0) {
   margin-right: 0px;
-}
-
-.navigation-links ul {
-  display: flex;
-  align-items: center;
-
-  height: 100%;
 }
 
 .navigation-logo {
