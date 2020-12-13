@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillBox</title>
 
     <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -18,14 +22,23 @@
     />
     <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
 
-    <link rel="stylesheet" href="index.css" />
-    <title>SkillBox</title>
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Local -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Meta -->
     <meta name="theme-color" content="#fff" />
   </head>
   <body>
     <div class="big-container">
-      <div class="navigation">
+      <!-- Nav bar -->
+      <header class="navigation">
         <div class="navigation-logo">
           <img src="assets/img/logo/html.svg" alt="logo image" />
           <h6>
@@ -44,13 +57,23 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="main">
-        <div class="header container-fluid">
-          <div class="header-child container">
+      </header>
+
+      <!-- Head carousel -->
+      <div class="header swiper-container">
+        <div class="swiper-wrapper">
+          <div class="header-child swiper-slide">
             <div class="header-text d-none d-md-block">
-              <h2>Availability,</h2>
-              <h6>I am Jesse Moses</h6>
+              <h2>Hello There,</h2>
+              <h6>Welcome To My Portoflio</h6>
+              <p>
+                This sliders have details about everything <br />
+                Follow along or start by veiwing my skills!
+              </p>
+
+              <a href="#skills" role="button" class="btn btn-light py-2">
+                <h6>My Skills <i class="fas fa-arrow-right"></i></h6>
+              </a>
             </div>
             <div class="header-image">
               <img
@@ -59,177 +82,313 @@
                 alt="Header image"
               />
 
-              <h5 class="text-center text-light pt-3">
+              <h5 class="text-center text-light pt-3 d-md-none">
+                Welcome, Check out resume
+              </h5>
+            </div>
+          </div>
+          <div class="header-child swiper-slide">
+            <div class="header-text d-none d-md-block">
+              <h2>My Projects,</h2>
+              <h6>A brief overiew of my work!</h6>
+              <p>Take a quicklook on the things i've done so far!</p>
+
+              <a href="#projects" role="button" class="btn btn-light py-2">
+                <h6>See Them <i class="fas fa-arrow-right"></i></h6>
+              </a>
+            </div>
+            <div class="header-image">
+              <img
+                src="assets/img/siteImage/papers.svg"
+                class=""
+                alt="Header image"
+              />
+
+              <h5 class="text-center text-light pt-3 d-md-none">
                 Welcome, Check out resume
               </h5>
             </div>
           </div>
         </div>
 
-        <div class="skills container">
-          <div class="section-header">
-            <h6 class="text-center py-1">STACKS</h6>
-          </div>
-          <div class="row">
-            <div class="col-6 col-md-4 col-lg-3 px-0 pr-1">
-              <button class="btn">
-                <img src="assets/img/logo/html.svg" alt="HTML5 logo" />
-                <h5>HTML5</h5>
-              </button>
-            </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
 
-            <div class="col-6 col-md-4 col-lg-3 px-0 pl-1 pr-md-1">
-              <button class="btn">
-                <img src="assets/img/logo/css.svg" alt="CSS3 logo" />
-                <h5>CSS3</h5>
-              </button>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 px-0 pr-1 pl-md-1 pr-md-0 pr-lg-1"
-            >
-              <button class="btn">
-                <img
-                  src="assets/img/logo/javascript.svg"
-                  alt="Javascript logo"
-                />
-                <h5>JavaScript</h5>
-              </button>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 px-0 pl-1 pl-md-0 pr-md-1 pr-lg-0 pl-lg-1"
-            >
-              <button class="btn">
-                <img
-                  src="assets/img/logo/bootstrap.svg"
-                  alt="Bootstrap 4 logo"
-                />
-                <h5>Bootstrap</h5>
-              </button>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3 px-0 pr-1 pl-md-1 pl-lg-0">
-              <button class="btn">
-                <img src="assets/img/logo/react.svg" alt="reactjs logo" />
-                <h5>ReactJS</h5>
-              </button>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3 px-0 pl-1 pr-lg-1">
-              <button class="btn">
-                <img src="assets/img/logo/nodejs.svg" alt="nodeJs logo" />
-                <h5>NodeJS</h5>
-              </button>
-            </div>
-
-            <div class="col-12 col-md-12 col-lg-6 px-0 pl-lg-1">
-              <button class="btn">
-                <img src="assets/img/logo/mongodb.svg" alt="mongodb logo" />
-                <h5>MongoDB</h5>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects container">
-          <!-- heading -->
-          <div class="section-header">
-            <h6 class="text-center py-1">PROJECTS</h6>
-          </div>
-
-          <!-- content -->
-          <div class="row">
-            <div class="col-12 col-md-4 mb-2 col-lg-3 px-0 pr-md-1">
-              <div class="project-item">
-                <div class="project-image">
-                  <img
-                    src="assets/img/siteImage/test.jpg"
-                    alt="Project Image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="project-text p-2">
-                  <h5>Tap Tap <em>game</em></h5>
-                  <p>
-                    This is a project i made for people who want to show thier
-                    weather yea!
-                  </p>
-
-                  <div class="btn btn-sm btn-success w100 m-0">Visit</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-4 mb-2 col-lg-3 px-0 pl-md-1 pr-md-1">
-              <div class="project-item">
-                <div class="project-image">
-                  <img
-                    src="assets/img/siteImage/test.jpg"
-                    alt="Project Image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="project-text p-2">
-                  <h5>Cabinet <em>web-app</em></h5>
-                  <p>
-                    This is a project i made for people who want to show thier
-                    weather yea!
-                  </p>
-
-                  <div class="btn btn-sm btn-success w100">Visit</div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-12 col-md-4 mb-2 col-lg-3 px-0 pr-md-1 pl-md-1 pr-lg-1"
-            >
-              <div class="project-item">
-                <div class="project-image">
-                  <img
-                    src="assets/img/siteImage/test.jpg"
-                    alt="Project Image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="project-text p-2">
-                  <h5>Weather App <em>game</em></h5>
-                  <p>
-                    This is a project i made for people who want to show thier
-                    weather yea!
-                  </p>
-
-                  <div class="btn btn-sm btn-success w100">Visit</div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-12 col-md-4 col-lg-3 px-0 pl-md-1 pr-md-1 pr-lg-0 pl-lg-1"
-            >
-              <div class="project-item">
-                <div class="project-image">
-                  <img
-                    src="assets/img/siteImage/test.jpg"
-                    alt="Project Image"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="project-text p-2">
-                  <h5>FanUnited <em>fan page</em></h5>
-                  <p>
-                    This is a project i made for people who want to show thier
-                    weather yea!
-                  </p>
-
-                  <div class="btn btn-sm btn-success w100">Visit</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Carousel Buttons -->
+        <div class="swiper-button-prev" role="button"></div>
+        <div class="swiper-button-next" role="button"></div>
       </div>
+
+      <!-- Main content -->
+      <main class="container-fluid">
+        <div class="row">
+          <div class="col-md-9 main-bar">
+            <!-- Skills -->
+            <div id="skills" class="skills container-fluid">
+              <div class="section-header">
+                <h6 class="text-center py-1">STACKS</h6>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 px-0 pr-1">
+                  <button class="btn">
+                    <img src="assets/img/logo/html.svg" alt="HTML5 logo" />
+                    <h5>HTML5</h5>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        style="width: 90%"
+                        role="progressbar"
+                      >
+                        90%
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 px-0 pl-1 pr-md-1">
+                  <button class="btn">
+                    <img src="assets/img/logo/css.svg" alt="CSS3 logo" />
+                    <h5>CSS3</h5>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        style="width: 86%"
+                        role="progressbar"
+                      >
+                        86%
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <div
+                  class="col-6 col-md-4 col-lg-3 px-0 pr-1 pl-md-1 pr-md-0 pr-lg-1"
+                >
+                  <button class="btn">
+                    <img
+                      src="assets/img/logo/javascript.svg"
+                      alt="Javascript logo"
+                    />
+                    <h5>JavaScript</h5>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        style="width: 82%"
+                        role="progressbar"
+                      >
+                        82%
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <div
+                  class="col-6 col-md-4 col-lg-3 px-0 pl-1 pl-md-0 pr-md-1 pr-lg-0 pl-lg-1"
+                >
+                  <button class="btn">
+                    <img
+                      src="assets/img/logo/bootstrap.svg"
+                      alt="Bootstrap 4 logo"
+                    />
+                    <h5>Bootstrap</h5>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        style="width: 88%"
+                        role="progressbar"
+                      >
+                        88%
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 px-0 pr-1 pl-md-1 pl-lg-0">
+                  <button class="btn">
+                    <img src="assets/img/logo/react.svg" alt="reactjs logo" />
+                    <h5>ReactJS</h5>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        style="width: 32%"
+                        role="progressbar"
+                      >
+                        32%
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 px-0 pl-1 pr-lg-1">
+                  <button class="btn">
+                    <img src="assets/img/logo/nodejs.svg" alt="nodeJs logo" />
+                    <h5>NodeJS</h5>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        style="width: 68%"
+                        role="progressbar"
+                      >
+                        68%
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-6 px-0 pl-lg-1">
+                  <button class="btn">
+                    <img src="assets/img/logo/mongodb.svg" alt="mongodb logo" />
+                    <h5>MongoDB</h5>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        style="width: 33%"
+                        role="progressbar"
+                      >
+                        33%
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Projects -->
+            <div class="projects" id="projects">
+              <!-- heading -->
+              <div class="section-header">
+                <h6 class="text-center py-1">PROJECTS</h6>
+              </div>
+
+              <!-- content -->
+              <div class="row">
+                <div class="col-md-6 col-lg-4 pr-md-1">
+                  <div class="project-item">
+                    <div class="project-image"></div>
+                    <div class="project-text p-2">
+                      <h5>Zoo Tap <em>game</em></h5>
+                      <p>
+                        A siple javascript game where you memorize animal images
+                        and select it when its reshown with other animal images.
+                      </p>
+
+                      <button class="btn btn-success w100 m-0" type="button">
+                        Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="project-item">
+                    <div class="project-image"></div>
+                    <div class="project-text p-2">
+                      <h5>Zoo Tap <em>game</em></h5>
+                      <p>
+                        A siple javascript game where you memorize animal images
+                        and select it when its reshown with other animal images.
+                      </p>
+
+                      <button class="btn btn-success w100 m-0" type="button">
+                        Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pl-lg-1 pr-lg-0 pr-md-1">
+                  <div class="project-item">
+                    <div class="project-image"></div>
+                    <div class="project-text p-2">
+                      <h5>Zoo Tap <em>game</em></h5>
+                      <p>
+                        A siple javascript game where you memorize animal images
+                        and select it when its reshown with other animal images.
+                      </p>
+
+                      <button class="btn btn-success w100 m-0" type="button">
+                        Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pr-lg-1">
+                  <div class="project-item">
+                    <div class="project-image"></div>
+                    <div class="project-text p-2">
+                      <h5>Zoo Tap <em>game</em></h5>
+                      <p>
+                        A siple javascript game where you memorize animal images
+                        and select it when its reshown with other animal images.
+                      </p>
+
+                      <button class="btn btn-success w100 m-0" type="button">
+                        Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-8 d-none d-lg-flex align-items-center justify-content-center"
+                >
+                  <h5>More Projects Soon</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 sidebar">
+            <div class="sidebar-item">
+              <div class="sidebar-heading">
+                <h5><i class="fas fa-check-circle"></i> PROFILE</h5>
+              </div>
+              <div class="sidebar-content">
+                <p><i class="fas fa-user-alt"></i> Jesse Moses</p>
+                <p><i class="fas fa-briefcase"></i> Web Developer</p>
+                <p><i class="fas fa-home"></i> Yola, Nigeria</p>
+                <p><i class="fas fa-code"></i> HTMLS, CSS3, Javascript</p>
+              </div>
+
+              <!-- Social -->
+              <div class="sidebar-heading">
+                <h5><i class="fas fa-check-circle"></i> Social</h5>
+              </div>
+
+              <div class="sidebar-content">
+                <button class="btn btn-primary btn-sm">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button class="btn btn-primary btn-sm">
+                  <i class="fab fa-github"></i>
+                </button>
+                <button class="btn btn-primary btn-sm">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+                <button class="btn btn-primary btn-sm">
+                  <i class="fab fa-facebook"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- <div class="sidebar-item twitter">
+              <a
+                class="twitter-timeline"
+                href="https://twitter.com/reelmza?ref_src=twsrc%5Etfw"
+                data-height="350px"
+                >Tweets Loading</a
+              >
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div> -->
+          </div>
+        </div>
+      </main>
     </div>
   </body>
+
+  <script src="index.js"></script>
 </html>

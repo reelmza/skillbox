@@ -17,14 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  padding-top: 55px; /*  To compensate for fixed nav bar */
-}
-
 :root {
-  --theme: #6c63ff;
+  --theme: #017c76;
   --themeShade: #4841c5;
   --themeMix: #dc0c57;
 
@@ -34,6 +28,13 @@ body {
   --themeGray: rgb(185, 185, 185);
 }
 
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-top: 55px; /*  To compensate for fixed nav bar */
+}
+
+/* Initialization */
 h1,
 h2,
 h3,
@@ -53,56 +54,41 @@ em {
 .w100 {
   width: 100%;
 }
-button h6 {
-  padding-top: 5px;
-}
-
-.slider {
-  width: 80%;
-  margin-top: 10px;
-
-  appearance: none;
-  -webkit-appearance: none;
-  height: 2px;
-  background: var(--themeMix);
-}
-
-.slider::-webkit-slider-thumb {
-  appearance: none;
-  height: 15px;
-  width: 15px;
-
-  border-radius: 50%;
-
-  background: var(--themeMix);
-  cursor: grab;
-}
-
-.slider::-moz-range-thumb {
-  appearance: none;
-  color: #015551;
-  height: 15px;
-  width: 15px;
-
-  border-radius: 50%;
-
-  background: var(--themeMix);
-  cursor: grab;
-}
 
 button:focus {
   box-shadow: none !important;
 }
+.btn {
+  border-radius: 5px;
+}
 
-/* Main */
+.btn-success {
+  background: #015551;
+  border: none;
+}
+
+.progress {
+  height: 15px;
+  margin-top: 5px;
+  width: 100%;
+}
+.progress-bar {
+  background: #4d8380;
+}
+
+i {
+  font-size: 16px;
+}
+
+/* Elements */
 .big-container {
   max-width: 100vw;
-  height: 100vh;
-
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* navigation */
 .navigation {
   min-height: 55px;
   width: 100%;
@@ -116,10 +102,11 @@ button:focus {
   position: fixed;
   top: 0;
 
-  z-index: 1;
+  z-index: 2;
   box-shadow: #000 1px 0px 3px;
 }
 
+/* nav-links */
 .navigation-links {
   height: 100%;
 }
@@ -139,6 +126,7 @@ button:focus {
   margin-right: 0px;
 }
 
+/* nav-logo */
 .navigation-logo {
   height: 100%;
 
@@ -165,16 +153,11 @@ button:focus {
   font-size: 16px;
 }
 
-.main {
-  min-height: 100%;
-  background: #fff;
-}
-
 .header {
   width: 100%;
-  height: 50%;
+  height: 45vh;
 
-  background: #01756f;
+  background: var(--theme);
 
   display: flex;
   align-items: center;
@@ -199,6 +182,7 @@ button:focus {
   display: flex;
   flex-direction: column;
 }
+
 .header-child img {
   max-height: 140px;
 }
@@ -208,67 +192,111 @@ button:focus {
   color: #fff;
 }
 
+.header button h6 {
+  font-size: 140%;
+  margin: 0px;
+}
+
+.header button {
+  border-radius: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
+.swiper-pagination span {
+  background: #fff;
+}
+/* Sidebar */
+.sidebar {
+  padding: 0px 10px;
+}
+
+.sidebar-item {
+  border: solid 1px #ddd;
+  margin-bottom: 5px;
+
+  border-radius: 5px;
+}
+
+.sidebar-heading {
+  margin: 0px 10px;
+  padding: 5px 0px;
+  border-bottom: solid 1.7px #ddd;
+}
+
+.sidebar-content {
+  padding: 3px 10px;
+}
+
+.sidebar-content p {
+  margin: 0px;
+  padding-bottom: 3px;
+}
+
+/* Main Bar */
 .skills,
 .projects {
-  padding: 10px 23px;
+  padding: 10px 10px;
   position: relative;
 }
 
 .section-header {
   position: absolute;
-  background: #e41262;
-  color: #fff;
+  background: #000;
 
-  display: flex;
-  align-items: center;
+  color: #fff;
+  padding: 5px;
+  border-radius: 0px 0px 10px 0px;
 
   top: 0;
   left: 0;
-
   z-index: 1;
-
-  padding: 5px;
 }
 
+/* skills container */
 .skills button {
   width: 100%;
-  padding: 20px 0px;
+  padding: 20px 25px;
 
   border-radius: 5px;
   margin-bottom: 10px;
 
-  background: #fff;
+  background: rgb(255, 255, 255);
   color: var(--themeDark);
 }
 
-/* .skills button:hover {
-} */
-
 .skills button h5 {
   margin: 0px;
-  color: #017c76;
+  color: #4d8380;
 }
 
 .skills button img {
   height: 48px;
 }
 
-/* Projeccts */
-.project-item {
-  border-radius: 0px 0px 8px 8px;
+/* project container */
+.projects .row div {
+  padding: 0px;
+  padding-bottom: 3px;
 }
-
 .project-image {
   width: 100%;
   height: 180px;
 
-  background: rgb(212, 212, 212);
-  overflow: hidden;
+  background: url("assets/img/siteImage/test.jpg") no-repeat top;
+  background-size: cover;
 }
 
 .project-text {
   border: solid 1px #dddddd;
-  border-radius: 0px 0px 5px 5px;
+  /* used this to prevent border from going arround the whole 'project-item'  */
+}
+
+.project-text .btn {
+  padding: 10px 0px;
 }
 
 .project-text h5 {
@@ -277,50 +305,45 @@ button:focus {
 }
 
 @media only screen and (min-width: 576px) {
+  body {
+    padding-top: 65px;
+  }
   .navigation {
     min-height: 65px;
     padding: 0px 20px;
   }
-  .header {
+  .gallery {
     height: 40%;
-    padding: 10px 0px;
-  }
-
-  .header-child img {
-    max-height: 150px;
-  }
-
-  .slider {
-    width: 70%;
-  }
-
-  .skills button {
-    padding: 40px 0px;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
   .navigation {
     min-height: 70px;
     padding: 0px 30px;
   }
+
   .header {
-    height: 60%;
+    height: 60vh;
   }
 
-  .header-child {
-    width: 100%;
-  }
-
-  .header-text h2 {
-    font-size: 50px;
-  }
   .header-child img {
     max-height: 200px;
   }
 
-  .slider {
-    width: 45%;
+  .header-text h2 {
+    font-size: 45px;
+  }
+
+  .header-text h6 {
+    font-size: 20px;
+  }
+
+  .sidebar {
+    padding: 10px 10px 0px 0px;
   }
 
   .section-header {
@@ -329,15 +352,33 @@ button:focus {
 
   .skills button {
     border: solid 1px #dddddd;
+    padding: 40px 40px;
   }
 
   .project-image {
     height: 150px;
   }
+
+  .progress {
+    height: 20px;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  .header-text h2 {
+  .gallery-text h2 {
     font-size: 80px;
+  }
+
+  .header-text h2 {
+    font-size: 70px;
+  }
+
+  .header-text h6 {
+    font-size: 27px;
+  }
+
+  .header-child img {
+    max-height: 250px;
   }
 }
