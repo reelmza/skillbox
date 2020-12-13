@@ -13,10 +13,6 @@
   outline: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --theme: #017c76;
   --themeShade: #4841c5;
@@ -34,6 +30,7 @@ body {
   padding-top: 55px; /*  To compensate for fixed nav bar */
   background: #eee;
   color: #303336;
+  position: relative;
 }
 
 /* Initialization */
@@ -53,6 +50,9 @@ em {
   padding: 3px 5px;
 }
 
+.hidden {
+  display: none;
+}
 .h100 {
   height: 100%;
 }
@@ -105,6 +105,21 @@ i {
   flex-direction: column;
 }
 
+.mobile-navbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  height: 100vh;
+  width: 80%;
+  margin-top: 55px;
+
+  padding: 10px 10px;
+  z-index: 1;
+
+  background: #fff;
+  box-shadow: #474747 -2px 0px 8px;
+}
 /* navigation */
 .navigation {
   min-height: 55px;
@@ -301,7 +316,7 @@ i {
 /* skills container */
 .skills button {
   width: 100%;
-  padding: 50px 35px;
+  padding: 45px 35px;
 
   border-radius: 5px;
   margin-bottom: 10px;

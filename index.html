@@ -28,13 +28,6 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- LinkedIn -->
-    <script
-      type="text/javascript"
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-    ></script>
 
     <!-- Local -->
     <link rel="stylesheet" href="index.css" />
@@ -59,7 +52,7 @@
             <li class="d-none d-md-block"><h5>HIRE</h5></li>
             <li class="d-none d-md-block"><h5>CONTACT</h5></li>
 
-            <li class="d-md-none">
+            <li class="d-md-none" id="mobile-nav-icon">
               <i class="fas fa-bars"></i>
             </li>
           </ul>
@@ -336,10 +329,10 @@
                   </div>
                 </div>
 
-                <div
-                  class="col-lg-8 d-none d-flex"
-                >
-                  <div class="project-item d-flex align-items-center justify-content-center bg-light w-100">
+                <div class="col-lg-8 d-none d-flex">
+                  <div
+                    class="project-item d-flex align-items-center justify-content-center bg-light w-100"
+                  >
                     <h5 class="more-projects">More Projects Soon</h5>
                   </div>
                 </div>
@@ -365,14 +358,23 @@
                 >
               </div>
             </div>
-            <div class="sidebar-item">
-
-            </div>
-            </div>
+            <div class="sidebar-item"></div>
           </div>
         </div>
       </main>
     </div>
+
+    <div class="mobile-navbar hidden">
+      <h6>Hello Welcome</h6>
+    </div>
+
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+    ></script>
   </body>
 
   <script src="index.js"></script>
