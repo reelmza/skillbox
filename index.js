@@ -9,6 +9,7 @@ var swiper = new Swiper('.swiper-container', {
 
 
     speed: 700,
+    spaceBetween: 200,
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -17,9 +18,7 @@ var swiper = new Swiper('.swiper-container', {
 
     pagination: {
         el: '.swiper-pagination',
-        type: 'bullets',
-        bulletElement: "span"
+        type: 'bullets'
     }
 })
 var swiper = document.querySelector('.swiper-container').swiper
-console.log(swiper.pagination)

@@ -178,6 +178,11 @@ i {
 
   color: #000;
 }
+
+.swiper-wrapper {
+  margin-left: -40px;
+  background: red;
+}
 .header-image {
   display: flex;
   flex-direction: column;
