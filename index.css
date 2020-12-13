@@ -53,6 +53,10 @@ em {
   padding: 3px 5px;
 }
 
+.h100 {
+  height: 100%;
+}
+
 .w100 {
   width: 100%;
 }
@@ -80,9 +84,11 @@ button:focus {
 }
 
 .progress {
-  height: 20px;
+  height: 15px;
   margin-top: 5px;
   width: 100%;
+
+  font-size: 10px;
 }
 .progress-bar {
   background: #303336;
@@ -276,7 +282,7 @@ i {
 
 .section-header {
   position: absolute;
-  background: #971786;
+  background: #0cb937;
   opacity: 0.8;
   width: 70px;
 
@@ -307,23 +313,26 @@ i {
 
 .skills button h5 {
   margin: 0px;
+  font-size: 15px;
   color: #303336;
 }
 
 .skills button img {
-  height: 48px;
+  height: 24px;
 }
 
 /* project container */
 .projects .row div {
   padding: 0px;
-  padding-bottom: 3px;
+  padding-bottom: 20px;
 }
 
 .project-item {
   background: #fff;
-
   border: solid 1px #dddddd;
+  border-radius: 10px;
+
+  overflow: hidden;
 }
 .project-image {
   width: 100%;
@@ -343,9 +352,16 @@ i {
   border-bottom: solid 1px #dddddd;
 }
 
+.more-projects {
+  margin-top: 20px;
+}
 @media only screen and (min-width: 576px) {
   body {
     padding-top: 65px;
+  }
+
+  .progress-bar {
+    font-size: 16px;
   }
   .navigation {
     min-height: 65px;
@@ -353,6 +369,14 @@ i {
   }
   .gallery {
     height: 40%;
+  }
+
+  .skills button h5 {
+    font-size: 20px;
+  }
+
+  .skills button img {
+    height: 48px;
   }
 }
 
