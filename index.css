@@ -454,3 +454,48 @@ i {
     max-height: 250px;
   }
 }
+
+.fade {
+  animation: fade 1s;
+  animation-fill-mode: forwards;
+}
+
+.slideIn {
+  animation: slideIn 1s;
+  animation-fill-mode: forwards;
+}
+
+.slideOut {
+  animation: slideOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
