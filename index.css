@@ -65,7 +65,8 @@ button:focus {
 }
 
 .projects .btn-success {
-  background: #303336;
+  background: rgb(223, 223, 223);
+  color: #000;
   border: none;
 }
 
@@ -275,13 +276,13 @@ i {
 
 .section-header {
   position: absolute;
-  background: #303336;
+  background: #971786;
   opacity: 0.8;
   width: 70px;
 
   color: #fff;
   padding: 5px 0px;
-  margin: 11px 0px 0px -4px;
+  margin: 5px 0px 0px -15px;
 
   top: 0;
   left: 0;
