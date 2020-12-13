@@ -79,7 +79,7 @@ button:focus {
 }
 
 .progress {
-  height: 15px;
+  height: 20px;
   margin-top: 5px;
   width: 100%;
 }
@@ -275,15 +275,21 @@ i {
 
 .section-header {
   position: absolute;
-  background: #000;
+  background: #303336;
+  opacity: 0.8;
+  width: 70px;
 
   color: #fff;
-  padding: 5px;
-  border-radius: 0px 0px 10px 0px;
+  padding: 5px 0px;
+  margin: 11px 0px 0px -4px;
 
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.section-header h6 {
+  font-size: 11.5px;
 }
 
 /* skills container */
@@ -294,8 +300,8 @@ i {
   border-radius: 5px;
   margin-bottom: 10px;
 
-  background: rgb(255, 255, 255);
-  color: var(--themeDark);
+  background: #fff;
+  border: solid 1px #dddddd;
 }
 
 .skills button h5 {
@@ -322,7 +328,8 @@ i {
   width: 100%;
   height: 180px;
 
-  background: url("assets/img/siteImage/test.jpg") no-repeat top;
+  background: url("https://cdn.dribbble.com/users/774375/screenshots/14756223/media/d9f0e40dda7877e3af8b124234718bb4.png")
+    no-repeat top;
   background-size: cover;
 }
 
@@ -377,12 +384,7 @@ i {
     padding: 10px 10px 0px 0px;
   }
 
-  .section-header {
-    border-radius: 0px 0px 5px 5px;
-  }
-
   .skills button {
-    border: solid 1px #dddddd;
     padding: 40px 40px;
   }
 
@@ -391,7 +393,7 @@ i {
   }
 
   .progress {
-    height: 20px;
+    height: 25px;
     width: 100%;
   }
 }
