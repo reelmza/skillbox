@@ -51,6 +51,6 @@ navbutton.addEventListener('click', () => {
             mobileNav.classList.add("hidden")
             mobileNav.classList.remove("slideOut")
             return mobileNavState = 0
-        }, 1000)
+        }, 300)
     }
 }) 

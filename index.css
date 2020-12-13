@@ -455,29 +455,14 @@ i {
   }
 }
 
-.fade {
-  animation: fade 1s;
-  animation-fill-mode: forwards;
-}
-
 .slideIn {
-  animation: slideIn 1s;
+  animation: slideIn 0.5s;
   animation-fill-mode: forwards;
 }
 
 .slideOut {
-  animation: slideOut 1s;
+  animation: slideOut 0.5s;
   animation-fill-mode: forwards;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes slideIn {
