@@ -28,7 +28,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   padding-top: 55px; /*  To compensate for fixed nav bar */
-  background: #eee;
+  background: #f8f8f8;
   color: #303336;
   position: relative;
 }
@@ -316,6 +316,9 @@ i {
 }
 
 /* skills container */
+/* .skills {
+  background: #fff;
+} */
 .skills button {
   width: 100%;
   padding: 45px 35px;
