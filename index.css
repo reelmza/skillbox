@@ -223,7 +223,7 @@ i {
 }
 
 .header-child img {
-  max-height: 140px;
+  height: 140px;
 }
 
 .header-text {
@@ -328,7 +328,7 @@ i {
   width: 100%;
   padding: 35px 0px;
 
-  border: solid 1px #ddd;
+  border: solid 1px #ded6f1;
   background: rgb(255, 255, 255);
 }
 
@@ -359,7 +359,7 @@ i {
   width: 100%;
   height: 180px;
 
-  background: var(--theme);
+  background: var(--themeDead);
   /* background: url("https://cdn.dribbble.com/users/774375/screenshots/14756223/media/d9f0e40dda7877e3af8b124234718bb4.png")
     no-repeat top;
   background-size: cover; */
@@ -465,6 +465,6 @@ i {
   }
 
   .header-child img {
-    max-height: 250px;
+    min-height: 250px;
   }
 }
