@@ -64,9 +64,6 @@ em {
 button:focus {
   box-shadow: none !important;
 }
-.btn {
-  border-radius: 5px;
-}
 
 .projects .btn-success {
   background: var(--themeDead);
@@ -213,7 +210,7 @@ i {
 }
 
 .swiper-wrapper {
-  margin-left: -40px;
+  margin-left: -13%;
 }
 .header-image {
   display: flex;
@@ -241,6 +238,7 @@ i {
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff;
+  padding: 0px 30px;
 }
 
 .swiper-pagination span {
@@ -303,6 +301,7 @@ i {
 .section-header {
   position: absolute;
   background: var(--themeMix);
+  opacity: 0.88;
   width: 70px;
 
   color: #fff;
@@ -322,20 +321,19 @@ i {
 
 .skills button {
   width: 100%;
-  padding: 45px 35px;
+  padding: 15px 20px;
 
-  background: #fff;
-  border: solid 1px #dddddd;
+  background: rgb(255, 255, 255);
 }
 
 .skills button h5 {
   margin: 0px;
-  font-size: 15px;
+  font-size: 20px;
   color: var(--themeDead);
 }
 
 .skills button img {
-  height: 35px;
+  height: 48px;
 }
 
 /* project container */
@@ -431,6 +429,7 @@ i {
 
   .skills button {
     padding: 40px 40px;
+    border: solid 1px #dddddd;
   }
 
   .project-image {
