@@ -321,19 +321,20 @@ i {
 
 .skills button {
   width: 100%;
-  padding: 15px 20px;
+  padding: 40px 0px;
 
-  background: rgb(255, 255, 255);
+  /* border: solid 1px #dddddd; */
+  /* background: rgb(201, 198, 198); */
 }
 
 .skills button h5 {
   margin: 0px;
-  font-size: 20px;
+  font-size: 15px;
   color: var(--themeDead);
 }
 
 .skills button img {
-  height: 48px;
+  height: 40px;
 }
 
 /* project container */
