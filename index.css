@@ -17,7 +17,7 @@
   --theme: #49306b;
   --themeLight: #736194;
   --themeVeryLight: #a89cbf;
-  --themeDead: #8c8896;
+  --themeDead: #655a81;
 
   --themeMix: #e68e47;
   --themeMixLight: #ecb181;
@@ -110,11 +110,11 @@ i {
 }
 
 .mobile-navbar {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
 
-  height: 100vh;
+  height: 100%;
   width: 80%;
   margin-top: 55px;
 
@@ -122,6 +122,7 @@ i {
   z-index: 1;
 
   background: var(--themeWhite);
+  box-shadow: rgb(39, 39, 39) 0px -5px 10px;
 }
 /* navigation */
 .navigation {
@@ -326,7 +327,6 @@ i {
 .skills button {
   width: 100%;
   padding: 35px 0px;
-  border-radius: 0px;
 
   border: solid 1px #ddd;
   background: rgb(255, 255, 255);
