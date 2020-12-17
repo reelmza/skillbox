@@ -19,8 +19,10 @@
   --themeVeryLight: #a89cbf;
   --themeDead: #655a81;
 
-  --themeMix: #e68e47;
-  --themeMixLight: #ecb181;
+  --themeMix: #d82b2b;
+  --themeMixLight: #e44e4e;
+
+  --projectBG: #202020;
   --themeWhite: #fff;
 }
 
@@ -66,12 +68,13 @@ em {
   opacity: 0.6;
 }
 
-button:focus {
+button:focus,
+a:focus {
   box-shadow: none !important;
 }
 
 .projects .btn-success {
-  background: var(--theme);
+  background: var(--projectBG);
   color: var(--themeWhite);
   border: none;
   border-radius: 0px;
@@ -101,6 +104,7 @@ i {
   flex-direction: column;
 }
 
+/* Mobile Navbar */
 .mobile-navbar {
   position: fixed;
   right: 0;
@@ -114,7 +118,21 @@ i {
   z-index: 1;
 
   background: var(--themeWhite);
-  box-shadow: rgb(39, 39, 39) 0px -5px 10px;
+  box-shadow: #272727 0px -5px 10px;
+}
+
+.mobile-navbar a {
+  color: #000;
+}
+
+.site-pages,
+.mobile-social {
+  border-bottom: solid 12px #f3f0f5;
+  padding-bottom: 5px;
+}
+
+.mobile-navbar h6 {
+  padding: 3px 0px;
 }
 /* navigation */
 .navigation {
@@ -128,9 +146,9 @@ i {
 
   background: var(--theme);
   color: #fff;
+
   position: fixed;
   top: 0;
-
   z-index: 2;
 }
 
@@ -180,30 +198,28 @@ i {
   font-size: 16px;
 }
 
+/* Carousel */
 .header {
   width: 100%;
   height: 45vh;
+  padding: 10px 0px;
 
   background: var(--theme);
 
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0px;
 }
 
 .header-child {
   height: 100%;
   margin: 0px 10px;
 
-  border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 
   overflow: hidden;
-
-  color: #000;
 }
 
 .swiper-wrapper {
@@ -241,6 +257,7 @@ i {
 .swiper-pagination span {
   background: #fff;
 }
+
 /* Sidebar */
 .sidebar {
   padding: 0px 10px;
@@ -250,25 +267,9 @@ i {
   border: solid 1px #ddd;
   margin-bottom: 5px;
 
-  border-radius: 5px;
   background: white;
 }
 
-.linkedin {
-  display: flex;
-  justify-content: center;
-
-  max-width: 100%;
-  overflow: hidden;
-  border: none;
-
-  background: #303336;
-}
-
-.linkedin div {
-  box-shadow: none !important;
-  background: #303336;
-}
 .sidebar-heading {
   margin: 0px 10px;
   padding: 5px 0px;
@@ -277,11 +278,6 @@ i {
 
 .sidebar-content {
   padding: 3px 10px;
-}
-
-.sidebar-content p {
-  margin: 0px;
-  padding-bottom: 3px;
 }
 
 /* Main Bar */
@@ -299,8 +295,7 @@ i {
 .section-header {
   position: absolute;
   background: var(--themeMix);
-  opacity: 0.88;
-  width: 70px;
+  width: 75px;
 
   color: #fff;
   padding: 5px 0px;
@@ -312,7 +307,7 @@ i {
 }
 
 .section-header h6 {
-  font-size: 11.5px;
+  font-size: 11px;
 }
 
 /* skills container */
@@ -321,7 +316,7 @@ i {
   padding: 35px 0px;
 
   border: solid 1px #ded6f1;
-  background: rgb(255, 255, 255);
+  background: #fff;
 }
 
 .skills button h5 {
@@ -342,30 +337,28 @@ i {
 
 .project-item {
   background: #fff;
-  border: solid 1px #dddddd;
+  border: solid 1px #ddd;
   border-radius: 0px;
-
-  overflow: hidden;
 }
 
 .first-project {
-  background: var(--themeMixLight)
-    url("assets/img/siteImage/projects/zootap.png") no-repeat;
+  background: var(--projectBG) url("assets/img/siteImage/projects/zootap.png")
+    no-repeat;
 }
 
 .second-project {
-  background: var(--themeMixLight)
-    url("assets/img/siteImage/projects/cabinet.png") no-repeat;
+  background: var(--projectBG) url("assets/img/siteImage/projects/cabinet.png")
+    no-repeat;
 }
 
 .third-project {
-  background: var(--themeMixLight)
+  background: var(--projectBG)
     url("assets/img/siteImage/projects/fanunited.png") no-repeat;
 }
 
 .fourth-project {
-  background: var(--themeMixLight)
-    url("assets/img/siteImage/projects/weather.png") no-repeat;
+  background: var(--projectBG) url("assets/img/siteImage/projects/weather.png")
+    no-repeat;
 }
 
 .project-image {
@@ -382,11 +375,15 @@ i {
 
 .project-text h5 {
   padding-bottom: 5px;
-  border-bottom: solid 1px #dddddd;
+  border-bottom: solid 1px #ddd;
 }
 
 .more-projects {
   margin-top: 20px;
+}
+
+.more-projects a {
+  color: var(--themeMixLight);
 }
 @media only screen and (min-width: 576px) {
   body {
@@ -441,13 +438,14 @@ i {
   .main-bar {
     background: none;
   }
+
   .sidebar {
     padding: 10px 10px 0px 0px;
   }
 
   .skills button {
     padding: 40px 40px;
-    border: solid 1px #dddddd;
+    border: solid 1px #ddd;
   }
 
   .project-image {
