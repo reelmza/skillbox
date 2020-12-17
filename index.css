@@ -361,8 +361,8 @@ i {
 
   background: var(--theme) url("assets/img/siteImage/projects/zootap.png")
     no-repeat;
-  background-size: 400px;
-  background-position: 50% 35px;
+  background-size: 270px;
+  background-position: 50% 40px;
 }
 
 .project-text .btn {
@@ -471,5 +471,10 @@ i {
 
   .header-child img {
     min-height: 250px;
+  }
+
+  .project-image {
+    background-size: 230px;
+    background-position: 50% 35px;
   }
 }
