@@ -71,18 +71,10 @@ button:focus {
 }
 
 .projects .btn-success {
-  background: var(--themeDead);
+  background: var(--theme);
   color: var(--themeWhite);
   border: none;
-}
-
-.social .btn-primary {
-  background: #303336;
-  border: none;
-}
-
-.social i {
-  margin-top: 5px;
+  border-radius: 0px;
 }
 
 .progress {
