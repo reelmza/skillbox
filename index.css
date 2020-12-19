@@ -19,8 +19,8 @@
   --themeVeryLight: #c4b9d8;
   --themeDead: #706391;
 
-  --themeMix: #e81538;
-  --themeMixLight: #e44e4e;
+  --themeMix: #000;
+  --themeMixLight: #444;
 
   --projectBG: #e0e0e0;
 
@@ -120,9 +120,8 @@ i {
 }
 
 .mobile-nav-heading {
-  border-bottom: 1px solid var(--themeTextBlack);
-  border-top: 1px solid var(--themeTextBlack);
-  padding: 10px 0px;
+  background: #f7f7f7;
+  padding: 10px 10px;
   margin-bottom: 3px;
 }
 
@@ -322,7 +321,7 @@ i {
 
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 .section-header h6 {
