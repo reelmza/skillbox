@@ -128,7 +128,7 @@ i {
 
 .mobile-navbar a {
   color: var(--themeTextBlack);
-  padding: 5px 0px;
+  padding: 10px 15px;
   font-size: 14px;
 }
 /* navigation */
@@ -420,7 +420,6 @@ i {
   margin-top: 10px;
   padding-bottom: 25px;
   background: var(--themeWhite);
-  color: var(--themeDead);
 
   border-radius: 5px;
   border: solid 1px #ddd;
@@ -431,7 +430,7 @@ i {
 }
 
 .tab-header {
-  color: var(--themeDead);
+  color: var(--themeBlack);
   padding-top: 30px;
 }
 
@@ -444,6 +443,7 @@ i {
 
 .tab-text {
   padding: 0px 25px;
+  padding-top: 10px;
 }
 
 @media only screen and (min-width: 576px) {
