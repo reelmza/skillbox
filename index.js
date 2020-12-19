@@ -42,13 +42,13 @@ var swiper = new Swiper('.swiper-container', {
     init: true,
     loop: true,
     autoplay: {
-        delay: 14000,
+        delay: 8000,
         disableOnInteraction: true
     },
 
 
-    speed: 700,
-    spaceBetween: 200,
+    speed: 500,
+    spaceBetween: 100,
 
     navigation: {
         nextEl: '.swiper-button-next',
