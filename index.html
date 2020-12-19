@@ -50,6 +50,9 @@
             <li class="d-none d-md-block"><h5>HIRE</h5></li>
             <li class="d-none d-md-block"><h5>CONTACT</h5></li>
 
+            <li class="d-md-none mobile-theme-icon">
+              <i class="fas fa-sun theme-icon-child"></i>
+            </li>
             <li class="d-md-none mobile-nav-icon">
               <i class="fas fa-bars nav-icon-child"></i>
             </li>
@@ -547,12 +550,12 @@
             </div>
           </div>
 
-          <div class="col-md-3 sidebar">
-            <!-- <div class="sidebar-item">
+          <div class="col-md-3 sidebar ">
+            <div class="sidebar-item d-none d-md-block">
               <a
                 class="twitter-timeline"
                 href="https://twitter.com/reelmza?ref_src=twsrc%5Etfw"
-                data-height="700"
+                data-height="600"
                 data-chrome="noheader "
                 >Tweets by reelmza</a
               >
@@ -561,7 +564,80 @@
                 src="https://platform.twitter.com/widgets.js"
                 charset="utf-8"
               ></script>
-            </div> -->
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-heading"><h5>DIRECT Mail</h5></div>
+              <div class="sidebar-content">
+                <form>
+                  <textarea
+                    class="form-control w100 mb-2"
+                    cols="30"
+                    rows="10"
+                    maxlength="300"
+                  ></textarea>
+
+                  <input
+                    class="form-control mb-2"
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                  />
+
+                  <button class="btn btn-light w100 mb-1" stype="submit">
+                    SUBMIT <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="sidebar-item">
+              <div class="sidebar-heading"><h5>FEEDBACK</h5></div>
+              <div class="sidebar-content">
+                <form>
+                  <label>How fast did this page load?</label>
+                  <div
+                    class="btn-group w100 mb-2"
+                    role="group"
+                    aria-label="Page Speed"
+                  >
+                    <button class="btn btn-light" type="button">Slow</button>
+                    <button class="btn btn-light" type="button">Good</button>
+                    <button class="btn btn-light" type="button">Fast</button>
+                  </div>
+
+                  <label>Does this page look good on your device?</label>
+                  <div
+                    class="btn-group w100 mb-2"
+                    role="group"
+                    aria-label="Page Speed"
+                  >
+                    <button class="btn btn-light" type="button">Yes</button>
+                    <button class="btn btn-light" type="button">No</button>
+                  </div>
+
+                  <label>Do you think this looks modern?</label>
+                  <div
+                    class="btn-group w100 mb-2"
+                    role="group"
+                    aria-label="Page Speed"
+                  >
+                    <button class="btn btn-light" type="button">No</button>
+                    <button class="btn btn-light" type="button">
+                      Don't Know
+                    </button>
+                    <button class="btn btn-light" type="button">Yes</button>
+                  </div>
+
+                  <button
+                    class="btn btn-light w100 mb-1"
+                    stype="submit"
+                    value="SUBMIT"
+                  >
+                    SEND <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </main>

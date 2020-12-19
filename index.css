@@ -73,6 +73,10 @@ em {
   opacity: 0.6;
 }
 
+textarea {
+  border-radius: 0px !important;
+}
+
 button:focus,
 a:focus {
   box-shadow: none !important;
@@ -271,6 +275,7 @@ i {
 .sidebar-item {
   border: solid 1px #ddd;
   margin-bottom: 5px;
+  border-radius: 5px;
 
   background: #fff;
 }
@@ -439,6 +444,23 @@ i {
 .tab-text {
   padding: 0px 25px;
   padding-top: 10px;
+}
+
+/* FORMS */
+form .btn-light {
+  background: var(--themeDead);
+  color: var(--themeWhite);
+  border: none;
+}
+
+form .btn-light:hover {
+  background: var(--themeMix);
+  color: var(--themeWhite);
+}
+
+form .btn-light:focus {
+  background: var(--themeMix);
+  color: var(--themeWhite);
 }
 
 @media only screen and (min-width: 576px) {
