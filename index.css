@@ -188,6 +188,7 @@ i {
 
 .navigation-logo h6 {
   font-size: 15px;
+  padding-top: 2px;
 }
 
 .navigation-links ul li i {
@@ -307,7 +308,7 @@ i {
 }
 .section-header {
   position: absolute;
-  background: var(--themeMix);
+  background: var(--themeDead);
   opacity: 0.88;
   width: 75px;
 
