@@ -285,10 +285,6 @@ i {
 }
 
 /* Main Bar */
-.main-bar {
-  /* background: #fff; */
-}
-
 .skills,
 .projects,
 .tabs {
@@ -413,14 +409,14 @@ i {
 }
 
 /* TABS SECTION */
-
-.tab-item {
-  margin-top: 10px;
-  padding-bottom: 25px;
-  background: var(--themeWhite);
-
-  border-radius: 5px;
+.tabs-content-wrapper {
   border: solid 1px #ddd;
+  border-radius: 5px;
+  background: #fff;
+}
+.tab-item {
+  padding-bottom: 25px;
+  border-bottom: solid 1px #ddd;
 
   display: flex;
   flex-direction: column;
