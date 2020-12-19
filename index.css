@@ -14,12 +14,10 @@
 }
 
 :root {
-  --theme: #4d3174;
-  --themeLight: #736194;
-  --themeVeryLight: #c4b9d8;
+  --theme: #493664;
   --themeDead: #706391;
 
-  --themeMix: rgb(20, 20, 20);
+  --themeMix: #141414;
   --themeMixLight: #444;
 
   --projectBG: #e0e0e0;
@@ -144,7 +142,7 @@ i {
   align-items: center;
   justify-content: space-between;
 
-  background: var(--themeMix);
+  background: var(--theme);
   color: var(--themeWhite);
 
   position: fixed;
@@ -311,7 +309,7 @@ i {
 }
 .section-header {
   position: absolute;
-  background: var(--themeDead);
+  background: var(--theme);
   opacity: 0.88;
   width: 75px;
 
