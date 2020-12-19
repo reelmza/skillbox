@@ -73,8 +73,8 @@ em {
   opacity: 0.6;
 }
 
-textarea {
-  border-radius: 0px !important;
+textarea:focus {
+  box-shadow: none;
 }
 
 button:focus,
@@ -196,7 +196,7 @@ i {
 }
 
 .navigation-links ul li i {
-  font-size: 16px;
+  font-size: 32px;
 }
 
 /* Carousel */
@@ -248,12 +248,12 @@ i {
   color: var(--themeWhite);
 }
 
-.header a {
+.header-button {
   background: var(--themeDead);
   border: none;
 }
 
-.header a:hover {
+.header-button:hover {
   background: var(--themeMixLight);
 }
 
@@ -282,12 +282,11 @@ i {
 
 .sidebar-heading {
   margin: 0px 10px;
-  padding: 5px 0px;
-  border-bottom: solid 1.7px #ddd;
+  padding: 10px 0px;
 }
 
 .sidebar-content {
-  padding: 3px 10px;
+  padding: 0px 10px;
 }
 
 /* Main Bar */
@@ -451,6 +450,8 @@ form .btn-light {
   background: var(--themeDead);
   color: var(--themeWhite);
   border: none;
+
+  padding: 10px 0px;
 }
 
 form .btn-light:hover {
