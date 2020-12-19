@@ -119,19 +119,20 @@ i {
   box-shadow: rgb(119, 119, 119) -1px 0px 3px;
 }
 
-.mobile-navbar a {
-  color: rgb(51, 51, 51);
-}
-
-.site-pages,
-.mobile-social {
-  border-bottom: solid 1px #cccccc;
-  padding-bottom: 5px;
+.mobile-nav-heading {
+  border-bottom: 1px solid var(--themeDead);
+  border-top: 1px solid var(--themeDead);
+  padding: 10px 0px;
+  margin-bottom: 5px;
 }
 
 .mobile-navbar h6 {
-  padding: 3px 0px;
-  color: var(--themeBlack);
+  color: var(--themeDead);
+}
+
+.mobile-navbar a {
+  color: #616161;
+  padding: 5px 0px;
 }
 /* navigation */
 .navigation {
@@ -403,9 +404,9 @@ i {
 }
 
 .project-text h5 {
-  padding-bottom: 5px;
+  padding: 10px 0px;
   margin-bottom: 5px;
-  border-bottom: solid 2px #ddd;
+  border-bottom: solid 1px #ddd;
 }
 
 .more-projects {
