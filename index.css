@@ -112,7 +112,7 @@ i {
   width: 80%;
   margin-top: 55px;
 
-  padding: 10px 10px;
+  padding: 5px 10px;
   z-index: 1;
 
   background: var(--themeWhite);
@@ -120,18 +120,14 @@ i {
 }
 
 .mobile-nav-heading {
-  border-bottom: 1px solid var(--themeDead);
-  border-top: 1px solid var(--themeDead);
-  padding: 10px 0px;
-  margin-bottom: 5px;
-}
-
-.mobile-navbar h6 {
-  color: var(--themeDead);
+  border-bottom: 1px solid var(--themeTextBlack);
+  border-top: 1px solid var(--themeTextBlack);
+  padding: 7px 0px;
+  margin-bottom: 3px;
 }
 
 .mobile-navbar a {
-  color: #616161;
+  color: var(--themeTextBlack);
   padding: 5px 0px;
 }
 /* navigation */
