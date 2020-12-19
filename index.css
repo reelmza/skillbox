@@ -120,17 +120,18 @@ i {
 }
 
 .mobile-navbar a {
-  color: var(--themeDead);
+  color: rgb(51, 51, 51);
 }
 
 .site-pages,
 .mobile-social {
-  border-bottom: solid 12px #f3f0f5;
+  border-bottom: solid 1px #cccccc;
   padding-bottom: 5px;
 }
 
 .mobile-navbar h6 {
   padding: 3px 0px;
+  color: var(--themeBlack);
 }
 /* navigation */
 .navigation {
@@ -403,7 +404,8 @@ i {
 
 .project-text h5 {
   padding-bottom: 5px;
-  border-bottom: solid 1px #ddd;
+  margin-bottom: 5px;
+  border-bottom: solid 2px #ddd;
 }
 
 .more-projects {
@@ -420,7 +422,7 @@ i {
   margin-top: 10px;
   padding-bottom: 25px;
   background: var(--themeWhite);
-  color: var(--themeTextBlack);
+  color: var(--themeDead);
 
   border-radius: 5px;
   border: solid 1px #ddd;
@@ -443,7 +445,7 @@ i {
 }
 
 .tab-text {
-  padding: 0px 15px;
+  padding: 0px 25px;
 }
 
 @media only screen and (min-width: 576px) {
