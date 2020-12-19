@@ -116,19 +116,20 @@ i {
   z-index: 1;
 
   background: var(--themeWhite);
-  box-shadow: rgb(119, 119, 119) -1px 0px 3px;
+  box-shadow: #777777 -1px 0px 3px;
 }
 
 .mobile-nav-heading {
   border-bottom: 1px solid var(--themeTextBlack);
   border-top: 1px solid var(--themeTextBlack);
-  padding: 7px 0px;
+  padding: 10px 0px;
   margin-bottom: 3px;
 }
 
 .mobile-navbar a {
   color: var(--themeTextBlack);
   padding: 5px 0px;
+  font-size: 14px;
 }
 /* navigation */
 .navigation {
