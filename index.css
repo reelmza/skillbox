@@ -86,7 +86,7 @@ a:focus {
   display: none;
 }
 .progress-bar {
-  background: var(--themeDead);
+  background: var(--themeBlack);
   font-size: 8px;
 }
 
@@ -334,14 +334,13 @@ i {
   width: 100%;
   padding: 35px 0px;
 
-  border: solid 1px #ded6f1;
+  border: solid 1px #ddd;
   background: #fff;
 }
 
 .skills button h5 {
   margin: 0px;
   font-size: 15px;
-  color: var(--themeDead);
 }
 
 .skills button img {
