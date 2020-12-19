@@ -19,7 +19,7 @@
   --themeVeryLight: #c4b9d8;
   --themeDead: #706391;
 
-  --themeMix: #000;
+  --themeMix: rgb(20, 20, 20);
   --themeMixLight: #444;
 
   --projectBG: #e0e0e0;
@@ -144,7 +144,7 @@ i {
   align-items: center;
   justify-content: space-between;
 
-  background: var(--theme);
+  background: var(--themeMix);
   color: var(--themeWhite);
 
   position: fixed;
@@ -196,7 +196,7 @@ i {
 }
 
 .navigation-links ul li i {
-  font-size: 32px;
+  font-size: 16px;
 }
 
 /* Carousel */
@@ -219,13 +219,10 @@ i {
   align-items: center;
 }
 
-.header-image {
+.header-image a {
   display: flex;
   flex-direction: column;
-}
-
-.header-image h6 {
-  color: #333;
+  align-items: center;
 }
 
 .header-child img {
@@ -238,19 +235,21 @@ i {
 }
 
 .header-text p {
-  color: #333;
+  color: #141414;
 }
 
-.header a h6 {
-  font-size: 140%;
+.header-image a h6 {
   margin: 0px;
-
-  color: var(--themeWhite);
+  color: var(--themeTextBlack);
 }
 
 .header-button {
   background: var(--themeDead);
   border: none;
+}
+
+.header-button h6 {
+  color: #fff;
 }
 
 .header-button:hover {
