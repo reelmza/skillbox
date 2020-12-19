@@ -22,10 +22,10 @@
   --themeMix: #e81538;
   --themeMixLight: #e44e4e;
 
-  --projectBG: #dad3eb;
+  --projectBG: #e0e0e0;
 
   --themeBlack: #161616;
-  --themeTextBlack: #242424;
+  --themeTextBlack: #303030;
   --themeWhite: #fff;
 }
 
@@ -360,12 +360,13 @@ i {
   color: var(--themeBlack);
 
   border: solid 1px #ddd;
-  border-radius: 0px;
+  border-radius: 5px;
 }
 
 .project-item {
   background: #fff;
-  border-radius: 0px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .first-project {
@@ -417,17 +418,25 @@ i {
 
 .tab-item {
   margin-top: 10px;
+  padding-bottom: 25px;
   background: var(--themeWhite);
   color: var(--themeTextBlack);
+
+  border-radius: 5px;
   border: solid 1px #ddd;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tab-header {
   color: var(--themeDead);
-  padding-top: 20px;
+  padding-top: 30px;
 }
+
 .tab-header i {
-  font-size: 48px;
+  font-size: 32px;
 }
 .tab-header h4 {
   text-align: center;
