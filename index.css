@@ -20,7 +20,7 @@
   --themeMix: #141414;
   --themeMixLight: #444;
 
-  --projectBG: #e0e0e0;
+  --projectBG: rgb(211, 211, 211);
 
   --themeBlack: #161616;
   --themeTextBlack: #303030;
@@ -28,8 +28,7 @@
 }
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Nunito", "Trebuchet MS", "Lucida Sans Unicode", Arial;
   padding-top: 55px; /*  To compensate for fixed nav bar */
   background: #eee;
   color: var(--themeTextBlack);
@@ -55,8 +54,8 @@ em {
   padding: 3px 5px;
 }
 
-.hidden {
-  display: none;
+.hide {
+  display: none !important;
 }
 .h100 {
   height: 100%;
@@ -102,6 +101,21 @@ i {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.load-screen {
+  margin-top: -55px;
+  min-height: 100vh;
+  background: white;
+  z-index: 2;
+}
+
+.load-screen img {
+  animation: rotate 0.6s infinite linear;
+}
+
+.load-screen img {
+  height: 64px;
 }
 
 /* Mobile Navbar */
@@ -155,6 +169,10 @@ i {
   height: 100%;
 }
 
+.first-nav-link {
+  border-right: solid 1px #fff;
+  padding-right: 10px;
+}
 .navigation-links ul {
   display: flex;
   margin-bottom: 0%;
@@ -282,6 +300,10 @@ i {
   padding: 10px 0px;
 }
 
+.sidebar-heading h5 {
+  font-weight: 600;
+}
+
 .sidebar-content {
   padding: 0px 10px;
 }
@@ -307,7 +329,7 @@ i {
 .explain-p-second {
   margin-top: -13px;
 }
-.section-header {
+/* .section-header {
   position: absolute;
   background: var(--theme);
   opacity: 0.88;
@@ -320,11 +342,11 @@ i {
   top: 0;
   left: 0;
   z-index: -1;
-}
+} */
 
-.section-header h6 {
+/* .section-header h6 {
   font-size: 11px;
-}
+} */
 
 /* skills container */
 .skills button {
@@ -388,15 +410,17 @@ i {
   width: 100%;
   height: 180px;
 
-  background-size: 320px;
+  background-size: 300px;
   background-position: 50% 50%;
 }
 
 .project-text .btn {
   padding: 10px 0px;
+  font-weight: 600;
 }
 
 .project-text h5 {
+  font-weight: 600;
   padding: 10px 0px;
   margin-bottom: 5px;
   border-bottom: solid 1px #ddd;
@@ -428,6 +452,9 @@ i {
 .tab-header {
   color: var(--themeBlack);
   padding-top: 30px;
+}
+.tab-header h5 {
+  font-weight: 600;
 }
 
 .tab-header i {
@@ -493,6 +520,10 @@ form .btn-light:focus {
 @media only screen and (min-width: 768px) {
   body {
     padding-top: 70px;
+  }
+
+  .load-screen {
+    margin-top: -70px;
   }
   .navigation {
     min-height: 70px;
@@ -576,5 +607,15 @@ form .btn-light:focus {
 
   .tab-text {
     padding: 10px 40px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

@@ -29,6 +29,13 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Local -->
     <link rel="stylesheet" href="index.css" />
 
@@ -36,7 +43,20 @@
     <meta name="theme-color" content="#493664" />
   </head>
   <body>
-    <div class="big-container">
+    <div
+      id="load-screen"
+      class="load-screen d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        src="assets/img/siteImage/loading.svg"
+        alt="Loading Icon"
+        rel="preload"
+        as="image"
+      />
+
+      <h5 id="load-text" class="mt-2">Getting Images...</h5>
+    </div>
+    <div id="big-container" class="big-container hide">
       <!-- Nav bar -->
       <header class="navigation">
         <div class="navigation-logo">
@@ -49,7 +69,7 @@
 
         <div class="navigation-links">
           <ul>
-            <li class="d-none d-md-block"><h5>HIRE</h5></li>
+            <li class="d-none d-md-block first-nav-link"><h5>HIRE</h5></li>
             <li class="d-none d-md-block"><h5>CONTACT</h5></li>
 
             <li class="d-md-none mobile-nav-icon">
@@ -88,7 +108,7 @@
 
                 <h6 class="text-center pt-3 d-md-none pb-1">
                   Hello, I'm Jesse <br />
-                  FrontEnd Developer
+                  I'm a FrontEnd Developer
                 </h6>
               </a>
             </div>
@@ -120,7 +140,7 @@
 
                 <h6 class="text-center pt-3 d-md-none">
                   Take a look at my <br />
-                  project archive
+                  project archive.
                 </h6>
               </a>
             </div>
@@ -151,8 +171,8 @@
                 />
 
                 <h6 class="text-center pt-3 d-md-none">
-                  or a glimpse of what <br />
-                  service you'll get
+                  Here's why you will want<br />
+                  us to work.
                 </h6>
               </a>
             </div>
@@ -163,8 +183,8 @@
         <div class="swiper-pagination"></div>
 
         <!-- Carousel Buttons -->
-        <div class="swiper-button-prev" role="button"></div>
-        <div class="swiper-button-next" role="button"></div>
+        <div class="swiper-button-prev d-none d-md-block" role="button"></div>
+        <div class="swiper-button-next d-none d-md-block" role="button"></div>
       </div>
 
       <!-- Main content -->
@@ -184,11 +204,11 @@
                   </p>
                 </div>
               </div>
-              <div class="section-header">
+              <!-- <div class="section-header">
                 <h6 class="text-center py-1">
                   <i class="fas fa-graduation-cap" style="font-size: 12px"></i>
                 </h6>
-              </div>
+              </div> -->
               <div class="row">
                 <div class="col-6 col-md-4 col-lg-3 px-0 pr-1">
                   <button class="btn mb-2">
@@ -328,11 +348,11 @@
                 </div>
               </div>
               <!-- HEADING -->
-              <div class="section-header">
+              <!-- <div class="section-header">
                 <h6 class="text-center py-1">
                   <i class="fas fa-folder" style="font-size: 12px"></i>
                 </h6>
-              </div>
+              </div> -->
 
               <!-- INNER CONTENT -->
               <div class="row">
@@ -340,7 +360,7 @@
                   <div class="project-item">
                     <div class="project-image first-project"></div>
                     <div class="project-text p-2">
-                      <h5>Zoo Tap <em>-game</em></h5>
+                      <h5>ZOO TAP <em>-game</em></h5>
                       <p>
                         A simple javascript game you memorize animal pictures
                         and tap on them.
@@ -361,7 +381,7 @@
                   <div class="project-item">
                     <div class="project-image second-project"></div>
                     <div class="project-text p-2">
-                      <h5>Cabinet <em>-web app</em></h5>
+                      <h5>CABINET <em>-webapp</em></h5>
                       <p>
                         A data management app to schedule classses and record
                         scores with.
@@ -382,7 +402,7 @@
                   <div class="project-item">
                     <div class="project-image third-project"></div>
                     <div class="project-text p-2">
-                      <h5>Fan United<em>-fanpage</em></h5>
+                      <h5>FAN UNITED<em>-fanpage</em></h5>
                       <p>
                         A fan website dedicated to Manchester United, made with
                         Bootstrap 4.
@@ -403,7 +423,7 @@
                   <div class="project-item">
                     <div class="project-image fourth-project"></div>
                     <div class="project-text p-2">
-                      <h5>Weather <em>webapp</em></h5>
+                      <h5>WEATHER<em>-website</em></h5>
                       <p>
                         A JavaScript API to fetch text based weather forecast of
                         any location.
@@ -451,11 +471,11 @@
                 </div>
               </div>
               <!-- HEADING -->
-              <div class="section-header">
+              <!-- <div class="section-header">
                 <h6 class="text-center py-1">
                   <i class="fas fa-exchange-alt" style="font-size: 12px"></i>
                 </h6>
-              </div>
+              </div> -->
 
               <!-- INNER CONTENT -->
               <div class="row tabs-content-wrapper">
@@ -576,6 +596,7 @@
                 data-chrome="noheader "
                 >Tweets by reelmza</a
               >
+
               <script
                 async
                 src="https://platform.twitter.com/widgets.js"
@@ -638,7 +659,7 @@
       </main>
     </div>
 
-    <div class="mobile-navbar hidden">
+    <div class="mobile-navbar hide">
       <div class="site-pages">
         <h6 class="mobile-nav-heading">SITE ACTIONS</h6>
         <h6><a href="#">HIRE</a></h6>
