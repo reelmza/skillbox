@@ -112,10 +112,11 @@ i {
   margin-top: -55px;
   min-height: 100vh;
   background: white;
+  color: #706391;
 }
 
 .load-screen img {
-  animation: rotate 0.7s infinite linear;
+  animation: rotate 1s infinite linear;
 }
 
 .load-screen img {
