@@ -4,17 +4,13 @@ const loadText = document.getElementById('load-text')
 
 setTimeout(() => {
     loadText.textContent = "Getting Projects..."
-}, 1300);
-
-setTimeout(() => {
-    loadText.textContent = "Done..."
-}, 2600);
+}, 1500);
 
 setTimeout(() => {
 
     loadScreen.classList.add('hide')
     bigContainer.classList.remove('hide')
-}, 3900);
+}, 3000);
 
 // Mobile nav-bar functions
 const navbutton = document.getElementsByClassName('mobile-nav-icon')[0]
