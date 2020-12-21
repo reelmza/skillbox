@@ -217,6 +217,8 @@ i {
 .navigation-logo h6 {
   font-size: 15px;
   padding-top: 2px;
+
+  font-weight: 600;
 }
 
 .navigation-links ul li i {

@@ -14,9 +14,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- Local -->
-    <link rel="stylesheet" href="index.css" />
-
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -24,6 +21,9 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+
+    <!-- Local -->
+    <link rel="stylesheet" href="index.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -41,6 +41,55 @@
 
     <!-- Meta -->
     <meta name="theme-color" content="#493664" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/siteImage/icons-and-og/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/siteImage/icons-and-og/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/siteImage/icons-and-og/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="assets/img/siteImage/icons-and-og/site.webmanifest"
+    />
+
+    <!-- OG Properties -->
+    <meta name="og:title" content="Jesse Moses" />
+    <meta name="og:url" content="devjesse.netlify.app" />
+    <meta
+      name="og:description"
+      content="Hello, i'm a FrontEnd developer, see my portfolio by clicking this link."
+    />
+    <meta
+      name="og:image"
+      content="https://devjesse.netlify.app/assets/img/siteImage/icons-and-og/og-image.png"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jesse Moses" />
+    <meta name="twitter:site" content="devjesse.netlify.app" />
+    <meta name="twitter:creator" content="reelmza" />
+    <meta
+      name="twitter:description"
+      content="Hello i'm jesse, i'm FrontEnd developer, this is my personal portfolio."
+    />
+    <meta
+      name="twitter:image"
+      content="https://devjesse.netlify.app/assets/img/siteImage/icons-and-og/og-image.png"
+    />
   </head>
   <body>
     <div id="load-screen" class="load-screen">
@@ -65,7 +114,9 @@
             <li class="d-none d-md-block first-nav-link">
               <h5><a href="https://www.linkedin.com/in/reelmza">HIRE</a></h5>
             </li>
-            <li class="d-none d-md-block"><h5>CONTACT</h5></li>
+            <li class="d-none d-md-block">
+              <h5><a href="#message-form">CONTACT</a></h5>
+            </li>
 
             <li class="d-md-none mobile-nav-icon">
               <i class="fas fa-bars nav-icon-child"></i>
@@ -150,7 +201,7 @@
               </p>
 
               <a
-                href="#projects"
+                href="#tabs"
                 role="button"
                 class="header-button btn btn-light py-2"
               >
@@ -598,52 +649,28 @@
                 charset="utf-8"
               ></script>
             </div>
-            <div class="sidebar-item mt-2 mt-md-0">
+            <div id="message-form" class="sidebar-item mt-2 mt-md-0">
               <div class="sidebar-heading"><h5>DIRECT Mail</h5></div>
               <div class="sidebar-content">
-                <form>
+                <form name="user-message" method="POST" data-netlify="true">
                   <textarea
+                    name="message"
                     class="form-control w100 mb-2"
                     cols="30"
                     rows="10"
                     maxlength="300"
-                    placeholder="Send me a direct message!"
+                    placeholder="Send me a direct message! replying in 1-4Hours"
                   ></textarea>
 
                   <input
                     class="form-control mb-2"
                     type="email"
+                    name="email"
                     placeholder="Your Email"
                     required
                   />
 
-                  <button class="btn btn-light w100 mb-2" stype="submit">
-                    SUBMIT <i class="fas fa-paper-plane"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-
-            <div class="sidebar-item">
-              <div class="sidebar-heading"><h5>FEEDBACK</h5></div>
-              <div class="sidebar-content">
-                <form>
-                  <label>How fast did this page load?</label>
-                  <div
-                    class="btn-group w100 mb-2"
-                    role="group"
-                    aria-label="Page Speed"
-                  >
-                    <button class="btn btn-light" type="button">Slow</button>
-                    <button class="btn btn-light" type="button">Good</button>
-                    <button class="btn btn-light" type="button">Fast</button>
-                  </div>
-
-                  <button
-                    class="btn btn-light w100 mb-2"
-                    stype="submit"
-                    value="SUBMIT"
-                  >
+                  <button class="btn btn-light w100 mb-2" type="submit">
                     SEND <i class="fas fa-paper-plane"></i>
                   </button>
                 </form>
@@ -658,7 +685,7 @@
       <div class="site-pages">
         <h6 class="mobile-nav-heading">SITE ACTIONS</h6>
         <h6><a href="https://www.linkedin.com/in/reelmza">HIRE</a></h6>
-        <h6><a href="#">CONTACT ME</a></h6>
+        <h6><a href="#message-form">CONTACT ME</a></h6>
       </div>
 
       <div class="mobile-social">
@@ -672,7 +699,7 @@
         </h6>
 
         <h6>
-          <a href="https://linkedin.com/reelmza"> LINKEDIN</a>
+          <a href="https://linkedin.com/in/reelmza"> LINKEDIN</a>
         </h6>
       </div>
     </div>
