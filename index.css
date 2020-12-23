@@ -116,7 +116,7 @@ i {
 }
 
 .load-screen img {
-  animation: rotate 1s infinite linear;
+  animation: rotate 0.5s infinite linear;
 }
 
 .load-screen img {
